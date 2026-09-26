@@ -1,4 +1,4 @@
-import { Color, GameState, Move, Piece, PieceType, Position } from "../types/chess";
+import { Color, GameState, Piece, PieceType, Position } from "../types/chess";
 
 /**
  * 象棋 FEN 解析与生成。

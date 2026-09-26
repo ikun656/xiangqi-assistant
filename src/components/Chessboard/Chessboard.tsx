@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import { Color, GameState, Piece, Position } from "../../types/chess";
+import { GameState, Piece, Position } from "../../types/chess";
 import { parseFen } from "../../utils/fen";
 import { PieceIcon } from "./PieceIcon";
 import "./chessboard.css";

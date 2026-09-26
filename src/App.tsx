@@ -5,8 +5,8 @@ import { GameState, Position } from "./types/chess";
 import { useEngine } from "./hooks/useEngine";
 
 function App() {
-  const [gameState, setGameState] = useState<GameState>(initialGameState());
-  const { ready, analysis, thinking, initEngine, analyze, stop } = useEngine();
+  const [gameState] = useState<GameState>(initialGameState());
+  const { ready, analysis, thinking } = useEngine();
 
   const handleMove = (from: Position, to: Position) => {
     // TODO: 本地规则校验（合法走法判断）
