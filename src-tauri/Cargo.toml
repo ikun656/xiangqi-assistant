@@ -1,0 +1,27 @@
+[package]
+name = "xiangqi-assistant"
+version = "0.1.0"
+description = "中国象棋辅助分析工具"
+authors = ["ikun656"]
+license = "MIT"
+repository = "https://github.com/ikun656/xiangqi-assistant"
+edition = "2021"
+rust-version = "1.70"
+
+[lib]
+name = "xiangqi_assistant_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tokio = { version = "1", features = ["process", "io-util", "sync", "time", "rt-multi-thread"] }
+thiserror = "2"
+
+[target."cfg(not(any(target_os = \"android\", target_os = \"ios\")))".dependencies]
+tauri-plugin-updater = "2"

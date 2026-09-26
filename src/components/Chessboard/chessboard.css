@@ -1,0 +1,40 @@
+.chessboard-container {
+  display: inline-block;
+  user-select: none;
+}
+
+.board-bg {
+  fill: #f5deb3;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+}
+
+.board-line {
+  stroke: #5d4037;
+  stroke-width: 1.5;
+}
+
+.river-text text {
+  font-size: 28px;
+  font-family: "KaiTi", "STKaiti", "楷体", serif;
+  fill: #5d4037;
+  letter-spacing: 8px;
+}
+
+.mark-last {
+  fill: rgba(255, 193, 7, 0.3);
+  stroke: rgba(255, 193, 7, 0.7);
+  stroke-width: 2;
+}
+
+.mark-selected {
+  fill: rgba(76, 175, 80, 0.3);
+  stroke: rgba(76, 175, 80, 0.8);
+  stroke-width: 2;
+}
+
+.mark-hint {
+  fill: rgba(33, 150, 243, 0.25);
+  stroke: rgba(33, 150, 243, 0.7);
+  stroke-width: 2;
+  stroke-dasharray: 4 3;
+}
